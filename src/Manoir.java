@@ -14,7 +14,7 @@ public class Manoir extends JFrame
 	 */
 	private static final long serialVersionUID = 1L;
 	private JButton[][] mesChambres=new JButton[5][5];  
-	private ImageIcon JEWEL = new ImageIcon(getClass().getResource("images/gem.png"));
+	private ImageIcon JEWEL = new ImageIcon(getClass().getResource("images/gem.png")); 
 	private ImageIcon DUST = new ImageIcon(getClass().getResource("images/dust.png"));
 	private ImageIcon ROBOT = new ImageIcon(getClass().getResource("images/robot2.png"));
 	private ImageIcon DUSTJEWERLY = new ImageIcon(getClass().getResource("images/dujew.png"));

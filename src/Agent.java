@@ -48,7 +48,6 @@ public class Agent implements Runnable {
 					int size = solution.size();
 
 					for (int i=0; i<size; i++) {
-						System.out.println(solution.get(0)+" ");
 						a = solution.get(0);
 						solution.remove(0);
 						position = positions(a);
@@ -116,7 +115,7 @@ public class Agent implements Runnable {
 
 	private int goal1() {
 		for(int i=0; i<heuristique.size(); i++) {
-			if(heuristique.get(i) == hmax ) {
+			if(heuristique.get(i) == hmax || heuristique.get(i) == 6) {
 				return i;  
 			}
 		}
@@ -250,7 +249,6 @@ public class Agent implements Runnable {
 				}
 			}
 		}
-		//System.out.println(hmax);
 		solution = new ArrayList<List<Direction>>();
 		if (g.mode==1) heuristique = new ArrayList<Integer>();
 		List <Direction> a;

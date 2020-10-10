@@ -12,7 +12,6 @@ public class Game {
 			try {
 				Thread.sleep(300);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			afficher();
@@ -31,20 +30,6 @@ public class Game {
 						String.valueOf(agent.erreur));
 			}
 		}
-		/*
-		for(int i=0; i<5; i++) {
-			for(int j=0; j<5; j++) {
-				System.out.print(env.L[i][j].tosString()+" ");
-			}
-			System.out.println();
-		}
-		System.out.println("nombre de cout = "+agent.cout);
-		System.out.println("nombre de poussière = "+agent.nbaspirer);
-		System.out.println("nombre de bijoux = "+agent.nbbijoux);
-		System.out.println("nombre d'erreur = "+agent.erreur);
-
-		System.out.println("\n\n");
-		 */
 	}
 
 	private void init() {
